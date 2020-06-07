@@ -25,7 +25,7 @@ Please bare in mind, `post-github-comment` can be used to post anything piped to
 
 ```yaml
   - name: "node:lts"
-    id: post-gh-comment
+    id: "post-github-comment"
     entrypoint: "bash"
     args:
       - "-c"
