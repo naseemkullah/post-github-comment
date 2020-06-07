@@ -1,6 +1,6 @@
 # post-github-comment
 
-A lightweight script that reads from stdin and posts a GitHub comment.
+Reads from stdin and posts a GitHub comment.
 
 ## How it works
 
