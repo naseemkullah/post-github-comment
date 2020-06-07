@@ -17,7 +17,7 @@ fs.readFile(process.stdin.fd, "utf8", (err, data) => {
       'Content-Type': 'application/json',
       'Content-Length': postData.length,
       'Authorization': `token ${process.env.GITHUB_TOKEN}`,
-      'User-Agent': `${process.env.GITHUB_OWNER}-post-gh-comment`
+      'User-Agent': `${process.env.GITHUB_OWNER}-post-github-comment`
     }
   };
 
