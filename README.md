@@ -1,6 +1,6 @@
 # post-github-comment
 
-Reads from stdin and posts a GitHub comment.
+`post-github-comment` reads from stdin and posts a GitHub comment.
 
 ## How it works
 
