@@ -1,6 +1,6 @@
 # post-github-comment
 
-`post-github-comment` reads from stdin and posts a GitHub comment.
+`post-github-comment` posts content read from stdin as a GitHub comment.
 
 ## How it works
 
@@ -14,7 +14,6 @@ The following environment variables are required:
 - `GITHUB_TOKEN`
 
 For more info, please refer to [GitHub's documentation](https://developer.github.com/v3/issues/comments/#create-an-issue-comment).
- 
 
 ## Example Usage
 
@@ -22,9 +21,8 @@ The following snippet shows how `post-github-comment` can be used to post the co
 
 Please bare in mind, `post-github-comment` can be used to post anything piped to it's stdin and in any CI/CD system that can run a step as a node container.
 
-
 ```yaml
-  - name: "node:lts"
+  - name: "node:lts-slim"
     id: "post-github-comment"
     entrypoint: "bash"
     args:
