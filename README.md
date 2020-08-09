@@ -19,8 +19,6 @@ For more info, please refer to [GitHub's documentation](https://developer.github
 
 The following snippet shows how `post-github-comment` can be used to post the contents of a previously generated file called `diff.yaml` in [Google Cloud Build pull request checks](https://cloud.google.com/cloud-build/docs/automating-builds/create-github-app-triggers).
 
-Please bare in mind, `post-github-comment` can be used to post anything piped to it's stdin and in any CI/CD system that can run a step as a node container.
-
 ```yaml
   - name: "node:lts-slim"
     id: "post-github-comment"
